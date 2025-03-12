@@ -1,10 +1,9 @@
 from core.PearsonCorrelation import PearsonCorrelation
+import os
+import sys
 
-
-
-def test_placeholder():
-    assert True
-
+# Add the project root to the Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 def test_predict_for_user():
     #result = PearsonCorrelation.predict_for_user(1)
