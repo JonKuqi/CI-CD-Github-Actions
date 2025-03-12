@@ -7,7 +7,7 @@ init(autoreset=True)
 class MergingItemAndUserBased:
 
     @staticmethod
-    def mergeItemAndUserBased(userId, data, numberOf, automatic, alpha = 0.0):
+    def mergeItemAndUserBased(userId, data = DataFetcher.getAllData(), numberOf = 20, automatic = False, alpha = 0.0):
         print()
         itemBasedBookList = ItemBasedFilter.getRecommendations(userId, data)
         print("Item Rating: ",itemBasedBookList)

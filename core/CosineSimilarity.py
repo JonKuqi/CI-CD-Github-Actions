@@ -204,7 +204,7 @@ class ItemBasedFilter:
             if len(arrB) != n:
                 raise ValueError("Input arrays must have the same length")
 
-            # Convert Python lists to ctypes arrays
+            # Convert core lists to ctypes arrays
             arrayA = (ctypes.c_double * n)(*arrA)
             arrayB = (ctypes.c_double * n)(*arrB)
 
