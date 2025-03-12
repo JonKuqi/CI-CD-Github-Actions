@@ -2,6 +2,7 @@ import json
 import math
 from core.DataFetcher import DataFetcher
 
+
 class PearsonCorrelation:
 
     @staticmethod
@@ -41,9 +42,9 @@ class PearsonCorrelation:
 
         predicted_rating = target_user_avg + (numerator / denominator if denominator != 0 else 0)
 
-        
         predicted_rating = max(0.0, min(5.0, predicted_rating))
         return predicted_rating
+
 
     @staticmethod
     def predict_for_user(user_id):
@@ -96,6 +97,3 @@ class PearsonCorrelation:
                 predictions[book_id] = prediction
 
         return predictions
-
-
-
