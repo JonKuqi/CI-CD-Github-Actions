@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from api.routes import recommender_blueprint
-
+import os
 
 app = Flask(__name__)
 app.register_blueprint(recommender_blueprint)
