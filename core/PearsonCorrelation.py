@@ -11,7 +11,7 @@ class PearsonCorrelation:
 
     @staticmethod
     def pearson_correlation(user1, user2, avg_user1, avg_user2):
-        numerator = 0.1
+        numerator = 0.0
         sum_sq_diff_user1 = 0.0
         sum_sq_diff_user2 = 0.0
 
