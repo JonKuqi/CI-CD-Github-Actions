@@ -1,5 +1,4 @@
 from core.PearsonCorrelation import PearsonCorrelation
-from core.CosineSimilarity import ItemBasedFilter
 from core.DataFetcher import DataFetcher
 from colorama import init, Fore, Style
 init(autoreset=True)
@@ -9,10 +8,8 @@ class MergingItemAndUserBased:
     @staticmethod
     def mergeItemAndUserBased(userId, data = DataFetcher.getAllData(), numberOf = 20, automatic = False, alpha = 0.0):
         print()
-        itemBasedBookList = ItemBasedFilter.getRecommendations(userId, data)
-        print("Item Rating: ",itemBasedBookList)
-        print()
         userBasedBookList = PearsonCorrelation.predict_for_user(userId)
+        itemBasedBookList = userBasedBookList
         print("User Rating: ", userBasedBookList)
         print()
         #userBasedBookList = ItemBasedFilter.getRecommendations(userId, data)
