@@ -1,6 +1,6 @@
 import math
 
-from DataFetcher import DataFetcher
+from core.DataFetcher import DataFetcher
 import re
 from collections import defaultdict
 import ctypes
@@ -17,7 +17,7 @@ class ItemBasedFilter:
 
     #To return a dict of books and their score from  0 to 5
 
-    cFunctions = ctypes.CDLL('../CFiles/CosineSimilarity.dll')
+    cFunctions = ctypes.CDLL('CFiles/CosineSimilarity.dll')
 
 
     ## MAIN METHOD

@@ -1,6 +1,6 @@
 import json
 import math
-from DataFetcher import DataFetcher
+from core.DataFetcher import DataFetcher
 
 class PearsonCorrelation:
 

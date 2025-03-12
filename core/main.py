@@ -1,6 +1,6 @@
-from PearsonCorrelation import PearsonCorrelation
-from CosineSimilarity import ItemBasedFilter
-from DataFetcher import DataFetcher
+from core.PearsonCorrelation import PearsonCorrelation
+from core.CosineSimilarity import ItemBasedFilter
+from core.DataFetcher import DataFetcher
 from colorama import init, Fore, Style
 init(autoreset=True)
 
@@ -82,8 +82,8 @@ class MergingItemAndUserBased:
 
 
 
-resultList = MergingItemAndUserBased.mergeItemAndUserBased("1", DataFetcher.getAllData(), 50, False, 0.5)
-#resultList = MergingItemAndUserBased.mergeItemAndUserBased("1", DataFetcher.getAllData(), 20, True)
-
-MergingItemAndUserBased.displayTable(resultList)
-
+# resultList = MergingItemAndUserBased.mergeItemAndUserBased("1", DataFetcher.getAllData(), 50, False, 0.5)
+# #resultList = MergingItemAndUserBased.mergeItemAndUserBased("1", DataFetcher.getAllData(), 20, True)
+#
+# MergingItemAndUserBased.displayTable(resultList)
+#
