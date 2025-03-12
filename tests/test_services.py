@@ -9,7 +9,6 @@ def test_predict_for_user():
     #result = PearsonCorrelation.predict_for_user(1)
 
     #print(result)
-
     assert True
 
 def test_pearson_correlation():
