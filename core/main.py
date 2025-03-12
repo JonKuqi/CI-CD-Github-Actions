@@ -21,6 +21,7 @@ class MergingItemAndUserBased:
         print("Alpha:", alpha)
         print()
 
+
         beta = 1.0 - alpha
         resultBookList = {}
 
