@@ -10,7 +10,6 @@ def home():
     return jsonify({"message": "Recommender System API is running!"})
 
 
-# branch Difference
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))
